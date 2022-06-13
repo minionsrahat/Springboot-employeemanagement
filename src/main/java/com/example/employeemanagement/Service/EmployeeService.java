@@ -2,15 +2,17 @@ package com.example.employeemanagement.Service;
 
 import com.example.employeemanagement.Entity.Employee;
 import com.example.employeemanagement.Repository.EmployeeRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@AllArgsConstructor
 @Service
 public class EmployeeService {
-    @Autowired
+//    @Autowired
     public EmployeeRepository employeeRepository;
 
     public Employee addEmployee(Employee employee){
